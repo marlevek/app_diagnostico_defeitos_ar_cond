@@ -1,0 +1,1 @@
+# app_diagnostico_defeitos_ar_cond
