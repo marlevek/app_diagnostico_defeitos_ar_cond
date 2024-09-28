@@ -59,10 +59,10 @@ def criar_banco():
         ('Compressor fica pouco tempo ligado', 'Dispositivo de expansão com gelo ou obstruído', 'Remova a carga de gás, passe nitrogênio ou substitua a peça'),
         ('Compressor fica pouco tempo ligado', 'Danos na válvula reversora ou válvula travda', 'Verifique a válvula.'),
         
-        ('Compressor funciona continuamente', 'Ajuste no controle muito alto (aquecimento) ou muito baixo (resfriamento)', 'Modifique o ajuste no controle remoto'),
-        ('Compressor funciona continuamente', 'Ventilador defeituoso ou não funciona', 'Verifique a circulação de ar na condensadora e teste o ventilador'),
-        ('Compressor funciona continuamente', 'Carga insuficiente de gás', 'Verificar vazamentos de gás'),
-        ('Compressor funciona continuamente', 'Aparelho subdimensionado', 'Calcule a carga térmica do ambiente.'),
+        ('Compressor não desliga', 'Ajuste no controle muito alto (aquecimento) ou muito baixo (resfriamento)', 'Modifique o ajuste no controle remoto'),
+        ('Compressor não desliga', 'Ventilador defeituoso ou não funciona', 'Verifique a circulação de ar na condensadora e teste o ventilador'),
+        ('Compressor não desliga', 'Carga insuficiente de gás', 'Verificar vazamentos de gás'),
+        ('Compressor não desliga', 'Aparelho subdimensionado', 'Calcule a carga térmica do ambiente.'),
         
         ('Ar condicionado não desliga', 'Carga de gás deficiente', 'Verifique a pressão e se há vazamentos.'),
         ('Ar condicionado não desliga', 'Evaporador bloqueado/sujo', 'Verifique se há obsturção no evaporador'),
@@ -85,7 +85,7 @@ def criar_banco():
     conn.commit()
     conn.close()
     
-    print('Banco de ados criado e dados inseridos com sucesso')
+    print('Banco de dados criado e dados inseridos com sucesso')
     
 
 # Executar a função para criar o banco de dados e inserir as causas
